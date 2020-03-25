@@ -1,0 +1,186 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #eef4d4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.field {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #b5cbb7;
+  box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), inset 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #818479;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 6;
+}
+
+.smaller-dot {
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-color: #818479;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  z-index: 80999;
+}
+
+.hand-hour,
+.hand-minute,
+.hand-second {
+  position: absolute;
+  top: 50%;
+  height: 110px;
+  width: 5px;
+  border-radius: 0 0 10px 10px;
+  background-color: #818479;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transform: rotate(180deg);
+  transform-origin: top;
+  transition: 0.05s linear;
+  z-index: 6;
+}
+
+.hand-hour {
+  width: 8px;
+  height: 90px;
+  z-index: 5;
+}
+
+.hand-second {
+  width: 2px;
+  height: 130px;
+  background-color: #e58f65;
+  z-index: 7;
+}
+
+.number {
+  position: absolute;
+  top: 0;
+  height: 150px;
+  width: 81px;
+  text-align: center;
+  background-color: #e7e08b;
+  transform-origin: bottom;
+  justify-content: center;
+  clip-path: polygon(0 0, 100% 0%, 50% 100%, 50% 100%);
+}
+
+.digit {
+  color: rgb(130, 133, 122);
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  text-shadow: 1px 2px 1px rgba(130, 133, 122, 0.3);
+}
+
+.number-1 {
+  background-color: #e4e9b2;
+  transform: rotate(30deg);
+}
+
+.digit-1 {
+  transform: rotate(-30deg);
+}
+
+.number-2 {
+  background-color: #d2e4c4;
+  transform: rotate(60deg);
+}
+
+.digit-2 {
+  transform: rotate(-60deg);
+}
+.number-3 {
+  background-color: #e7e08b;
+  transform: rotate(90deg);
+}
+
+.digit-3 {
+  transform: rotate(-90deg);
+}
+.number-4 {
+  background-color: #e4e9b2;
+  transform: rotate(120deg);
+}
+.digit-4 {
+  transform: rotate(-120deg);
+}
+.number-5 {
+  background-color: #d2e4c4;
+  transform: rotate(150deg);
+}
+.digit-5 {
+  transform: rotate(-150deg);
+}
+.number-6 {
+  background-color: #e7e08b;
+  transform: rotate(180deg);
+}
+.digit-6 {
+  transform: rotate(-180deg);
+}
+.number-7 {
+  background-color: #e4e9b2;
+  transform: rotate(210deg);
+}
+.digit-7 {
+  transform: rotate(-210deg);
+}
+.number-8 {
+  background-color: #d2e4c4;
+  transform: rotate(240deg);
+}
+.digit-8 {
+  transform: rotate(-240deg);
+}
+.number-9 {
+  background-color: #e7e08b;
+  transform: rotate(270deg);
+}
+.digit-9 {
+  transform: rotate(-270deg);
+}
+.number-10 {
+  background-color: #e4e9b2;
+  transform: rotate(300deg);
+}
+.digit-10 {
+  transform: rotate(-300deg);
+}
+
+.number-11 {
+  background-color: #d2e4c4;
+  transform: rotate(330deg);
+}
+
+.digit-11 {
+  transform: rotate(-330deg);
+}
